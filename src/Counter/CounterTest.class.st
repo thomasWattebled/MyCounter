@@ -5,6 +5,15 @@ Class {
 }
 
 { #category : #tests }
+CounterTest >> testDecrement [
+	
+	| myCounter |
+	myCounter := Counter new count: 22.
+	myCounter decrement.
+	self assert:( myCounter count) equals: 21
+]
+
+{ #category : #tests }
 CounterTest >> testIncrement [
 	
 	| myCounter |
