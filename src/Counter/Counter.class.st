@@ -40,3 +40,10 @@ Counter >> initialize [
 	"set the initial value of the value to 0"
 count := 0
 ]
+
+{ #category : #accessing }
+Counter >> printOn: aStream [
+
+super printOn: aStream.
+aStream nextPutAll: ' with value: ', count printString
+]
