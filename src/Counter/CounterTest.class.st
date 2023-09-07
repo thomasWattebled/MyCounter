@@ -23,6 +23,12 @@ CounterTest >> testIncrement [
 ]
 
 { #category : #tests }
+CounterTest >> testInitialize [
+
+	self assert: Counter new count equals:0
+]
+
+{ #category : #tests }
 CounterTest >> testSetAndValue [
 	
 	| myCounter |
