@@ -8,8 +8,7 @@ Class {
 CounterTest >> testDecrement [
 	
 	| myCounter |
-	myCounter := Counter new count: 22.
-	myCounter decrement.
+	myCounter := Counter new count: 22; decrement.
 	self assert:( myCounter count) equals: 21
 ]
 
